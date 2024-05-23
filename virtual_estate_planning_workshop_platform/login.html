@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>virtual estate planning workshop platform</title>
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <form action="login.php" method="POST" name="Formfill" onsubmit="return validation">
+        <h2 class="re">Login Form</h2>
+        <p id="result"></p> 
+        <div class="input-box">
+          <i class='bx bxs-envelope'></i>
+          <input type="email" name="email" placeholder="Enter Your Email " >
+        </div>
+        
+        <div class="input-box">
+          <i class='bx bxs-lock-alt'></i>
+          <input type="password" name="password" placeholder="Enter Your Password" >
+        </div>
+        <label for="role" style="color: white;">User Type:</label>
+        <select id="role" name="role" required style="width: 230px; height: 40px; color: white; background-color: black; font-family: century; font-weight: bold; font-size: 24px;">
+            <option value="admin">admin</option>
+            <option value="instructor">instructor</option>
+             <option value="attendee">attendee</option>
+        </select><br><br>
+        <div class="button">
+          <input type="submit" value="Login" onclick="validation()" class="btn">
+        </div>
+       
+      </form>
+    </div> 
+</body>
+</html>
